@@ -1,0 +1,497 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 12072714300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "User should navigate to login page",
+        "description": "",
+        "id": "login-test;user-should-navigate-to-login-page",
+        "after": [
+          {
+            "result": {
+              "duration": 2243728000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 331450500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on homepage",
+            "match": {
+              "location": "LoginTest.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2302739100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on login link",
+            "match": {
+              "location": "LoginTest.userClicksOnLoginLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 85911600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should navigate to login page successfully",
+            "match": {
+              "location": "LoginTest.userShouldNavigateToLoginPageSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7562564100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "User should not login successfully with invalid credentials",
+        "description": "",
+        "id": "login-test;user-should-not-login-successfully-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1275474100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 33300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is on homepage",
+            "match": {
+              "location": "LoginTest.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1393184000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks on login link",
+            "match": {
+              "location": "LoginTest.userClicksOnLoginLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 319712600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters email id \"cbust55@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cbust55@gmail.com",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginTest.userEntersEmailId(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 260392300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters password \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin123",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginTest.userEntersPassword(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1538942300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "LoginTest.userClicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112940200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should see the error message \"Login was unsuccessful. Please correct the errors and try again.\nNo customer account found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found",
+                  "offset": 35
+                }
+              ],
+              "location": "LoginTest.userShouldSeeTheErrorMessage(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5797466000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "User should not login successfully with invalid credentials",
+        "description": "",
+        "id": "login-test;user-should-not-login-successfully-with-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1773062600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 38700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is on homepage",
+            "match": {
+              "location": "LoginTest.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 864795300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks on login link",
+            "match": {
+              "location": "LoginTest.userClicksOnLoginLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 213124000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters email id \"codebust5@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "codebust5@gmail.com",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginTest.userEntersEmailId(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 251467700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters password \"admin555\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin555",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginTest.userEntersPassword(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 684865300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "LoginTest.userClicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 123244500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should see the error message \"Login was unsuccessful. Please correct the errors and try again.\nNo customer account found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found",
+                  "offset": 35
+                }
+              ],
+              "location": "LoginTest.userShouldSeeTheErrorMessage(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5176407000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "User should not login successfully with invalid credentials",
+        "description": "",
+        "id": "login-test;user-should-not-login-successfully-with-invalid-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1100513300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 38900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is on homepage",
+            "match": {
+              "location": "LoginTest.userIsOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1214702700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks on login link",
+            "match": {
+              "location": "LoginTest.userClicksOnLoginLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 194138100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters email id \"ccbust10@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ccbust10@gmail.com",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginTest.userEntersEmailId(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 156338400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters password \"ADMIN420\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADMIN420",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginTest.userEntersPassword(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1096590700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "LoginTest.userClicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105223500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should see the error message \"Login was unsuccessful. Please correct the errors and try again.\nNo customer account found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found",
+                  "offset": 35
+                }
+              ],
+              "location": "LoginTest.userShouldSeeTheErrorMessage(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Login Test",
+    "description": "As a User I want to login into demo.nopCommerce.com website.",
+    "id": "login-test",
+    "keyword": "Feature",
+    "uri": "login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
+  }
+]
