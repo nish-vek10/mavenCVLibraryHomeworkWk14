@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Feb 13, 2023 11:11:13 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Feb 13, 2023 11:34:31 PM</span>
 				</a>
 			</li>
 			<li>
@@ -153,7 +153,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>7</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -168,7 +168,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>21</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>84</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -187,158 +187,434 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Login Test</span>
-						<span class='test-time'>Feb 13, 2023 11:11:13 PM</span>
+						<span class='test-name'>Job Search Test</span>
+						<span class='test-time'>Feb 13, 2023 11:34:31 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 15s+101ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">User should navigate to login page</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='3' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User is on homepage</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='4' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When User clicks on login link</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='5' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then User should navigate to login page successfully</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenariooutline node' test-id='6' status='pass'>
-	<span class='duration right label'>0h 0m 30s+244ms</span>
+<div class='scenariooutline node' test-id='2' status='pass'>
+	<span class='duration right label'>0h 7m 10s+308ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
-		<span class="desc-text">User should not login successfully with invalid credentials</span>
+		<span class="desc-text">Search for jobs</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='7' class='node scenario pass' status='pass'>
+		<li test-id='3' class='node scenario pass' status='pass'>
 			<div class='category-list'>
 				<span class='category label white-text'>@regression</span>
 			</div>
 			
 			<b>Scenario</b>
 			
-			<span class="bdd-step-name">User should not login successfully with invalid credentials</span>
+			<span class="bdd-step-name">Search for jobs</span>
 			
 				<ul class='steps'>
-					<li test-id='8' class='node given pass' status='pass'><b>Given</b>
+					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
 						<span class="bdd-step-name">Given User is on homepage</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='9' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When User clicks on login link</span>
+					<li test-id='5' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on Accept Cookies</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='6' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Job Title "Tester"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='7' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Location "Harrow"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='8' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects distance from dropdown menu "up to 5 miles"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='9' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on More Search Options link</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='10' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And User enters email id "cbust55@gmail.com"</span>
+						<span class="bdd-step-name">And User enters Minimum Salary "30000"</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='11' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And User enters password "admin123"</span>
+						<span class="bdd-step-name">And User enters Maximum Salary "50000"</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='12' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And User clicks on login button</span>
+						<span class="bdd-step-name">And And User selects Salary Type from dropdown menu "Per annum"</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='13' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then User should see the error message "Login was unsuccessful. Please correct the errors and try again.
-No customer account found"</span>
+					<li test-id='13' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And And User selects Job Type from dropdown menu "Permanent"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='14' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Find Jobs button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='15' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should verify the Header Text "Permanent Tester jobs in Harrow on the Hill"</span>
 							<div class='pre'>passed</div>
 					</li>
 				</ul>
 		</li>
-		<li test-id='14' class='node scenario pass' status='pass'>
+		<li test-id='16' class='node scenario pass' status='pass'>
 			<div class='category-list'>
 				<span class='category label white-text'>@regression</span>
 			</div>
 			
 			<b>Scenario</b>
 			
-			<span class="bdd-step-name">User should not login successfully with invalid credentials</span>
+			<span class="bdd-step-name">Search for jobs</span>
 			
 				<ul class='steps'>
-					<li test-id='15' class='node given pass' status='pass'><b>Given</b>
+					<li test-id='17' class='node given pass' status='pass'><b>Given</b>
 						<span class="bdd-step-name">Given User is on homepage</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='16' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When User clicks on login link</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='17' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And User enters email id "codebust5@gmail.com"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='18' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And User enters password "admin555"</span>
+					<li test-id='18' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on Accept Cookies</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='19' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And User clicks on login button</span>
+						<span class="bdd-step-name">And User enters Job Title "Retail"</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='20' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then User should see the error message "Login was unsuccessful. Please correct the errors and try again.
-No customer account found"</span>
+					<li test-id='20' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Location "Edgware"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='21' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects distance from dropdown menu "up to 5 miles"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='22' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on More Search Options link</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='23' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Minimum Salary "300"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='24' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Maximum Salary "500"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='25' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And And User selects Salary Type from dropdown menu "Per week"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='26' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And And User selects Job Type from dropdown menu "Part Time"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='27' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Find Jobs button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='28' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should verify the Header Text "Part Time Retail jobs in Edgware"</span>
 							<div class='pre'>passed</div>
 					</li>
 				</ul>
 		</li>
-		<li test-id='21' class='node scenario pass' status='pass'>
+		<li test-id='29' class='node scenario pass' status='pass'>
 			<div class='category-list'>
 				<span class='category label white-text'>@regression</span>
 			</div>
 			
 			<b>Scenario</b>
 			
-			<span class="bdd-step-name">User should not login successfully with invalid credentials</span>
+			<span class="bdd-step-name">Search for jobs</span>
 			
 				<ul class='steps'>
-					<li test-id='22' class='node given pass' status='pass'><b>Given</b>
+					<li test-id='30' class='node given pass' status='pass'><b>Given</b>
 						<span class="bdd-step-name">Given User is on homepage</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='23' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When User clicks on login link</span>
+					<li test-id='31' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on Accept Cookies</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='24' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And User enters email id "ccbust10@gmail.com"</span>
+					<li test-id='32' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Job Title "Web developer"</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='25' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And User enters password "ADMIN420"</span>
+					<li test-id='33' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Location "Essex"</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='26' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And User clicks on login button</span>
+					<li test-id='34' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects distance from dropdown menu "up to 10 miles"</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='27' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then User should see the error message "Login was unsuccessful. Please correct the errors and try again.
-No customer account found"</span>
+					<li test-id='35' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on More Search Options link</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='36' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Minimum Salary "40000"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='37' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Maximum Salary "650000"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='38' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And And User selects Salary Type from dropdown menu "Per annum"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='39' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And And User selects Job Type from dropdown menu "Permanent"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='40' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Find Jobs button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='41' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should verify the Header Text "Permanent Web Developer jobs in Essex"</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='42' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@regression</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Search for jobs</span>
+			
+				<ul class='steps'>
+					<li test-id='43' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User is on homepage</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='44' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on Accept Cookies</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='45' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Job Title "Data Analyst"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='46' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Location "Manchester"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='47' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects distance from dropdown menu "up to 1 mile"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='48' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on More Search Options link</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='49' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Minimum Salary "50000"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='50' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Maximum Salary "75000"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='51' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And And User selects Salary Type from dropdown menu "Per annum"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='52' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And And User selects Job Type from dropdown menu "Any"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='53' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Find Jobs button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='54' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should verify the Header Text "Data Analyst jobs in Manchester"</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='55' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@regression</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Search for jobs</span>
+			
+				<ul class='steps'>
+					<li test-id='56' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User is on homepage</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='57' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on Accept Cookies</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='58' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Job Title "Surgeon"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='59' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Location "HA1 1AA"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='60' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects distance from dropdown menu "up to 10 miles"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='61' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on More Search Options link</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='62' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Minimum Salary "6000"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='63' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Maximum Salary "9000"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='64' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And And User selects Salary Type from dropdown menu "Per month"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='65' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And And User selects Job Type from dropdown menu "Temporary"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='66' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Find Jobs button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='67' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should verify the Header Text "Temporary Surgeon jobs in HA1 1AA"</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='68' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@regression</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Search for jobs</span>
+			
+				<ul class='steps'>
+					<li test-id='69' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User is on homepage</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='70' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on Accept Cookies</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='71' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Job Title "Business Analyst"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='72' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Location "Warwickshire"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='73' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects distance from dropdown menu "up to 2 miles"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='74' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on More Search Options link</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='75' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Minimum Salary "50"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='76' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Maximum Salary "100"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='77' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And And User selects Salary Type from dropdown menu "Per hour"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='78' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And And User selects Job Type from dropdown menu "Permanent"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='79' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Find Jobs button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='80' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should verify the Header Text "Permanent Business Analyst jobs in Warwickshire"</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='81' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@regression</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Search for jobs</span>
+			
+				<ul class='steps'>
+					<li test-id='82' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User is on homepage</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='83' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User clicks on Accept Cookies</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='84' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Job Title "Geologist"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='85' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Location "Surrey"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='86' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User selects distance from dropdown menu "up to 25 miles"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='87' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on More Search Options link</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='88' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Minimum Salary "250"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='89' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User enters Maximum Salary "350"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='90' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And And User selects Salary Type from dropdown menu "Per day"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='91' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And And User selects Job Type from dropdown menu "Any"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='92' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User clicks on Find Jobs button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='93' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should verify the Header Text "Geologist jobs in Surrey"</span>
 							<div class='pre'>passed</div>
 					</li>
 				</ul>
@@ -401,12 +677,12 @@ No customer account found"</span>
 					<div class='category-heading'>
 						<span class='category-name'>@regression</span>
 						<span class='category-status right'>
-							<span class='label pass'>4</span>
+							<span class='label pass'>8</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 4</span>
+							<span class='label green accent-4 white-text'>Passed: 8</span>
 							
 							
 						</div>
@@ -422,23 +698,43 @@ No customer account found"</span>
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 13, 2023 11:11:13 PM</td>
-										<td class='linked' test-id='1'>Login Test</td>
+										<td>Feb 13, 2023 11:34:31 PM</td>
+										<td class='linked' test-id='1'>Job Search Test</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Feb 13, 2023 11:11:31 PM</td>
-										<td class='linked' test-id='7'>Login Test.User should not login successfully with invalid credentials.User should not login successfully with invalid credentials</td>
+										<td>Feb 13, 2023 11:34:31 PM</td>
+										<td class='linked' test-id='3'>Job Search Test.Search for jobs.Search for jobs</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Feb 13, 2023 11:11:43 PM</td>
-										<td class='linked' test-id='14'>Login Test.User should not login successfully with invalid credentials.User should not login successfully with invalid credentials</td>
+										<td>Feb 13, 2023 11:35:35 PM</td>
+										<td class='linked' test-id='16'>Job Search Test.Search for jobs.Search for jobs</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Feb 13, 2023 11:11:53 PM</td>
-										<td class='linked' test-id='21'>Login Test.User should not login successfully with invalid credentials.User should not login successfully with invalid credentials</td>
+										<td>Feb 13, 2023 11:36:30 PM</td>
+										<td class='linked' test-id='29'>Job Search Test.Search for jobs.Search for jobs</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 13, 2023 11:37:23 PM</td>
+										<td class='linked' test-id='42'>Job Search Test.Search for jobs.Search for jobs</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 13, 2023 11:38:52 PM</td>
+										<td class='linked' test-id='55'>Job Search Test.Search for jobs.Search for jobs</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 13, 2023 11:39:38 PM</td>
+										<td class='linked' test-id='68'>Job Search Test.Search for jobs.Search for jobs</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 13, 2023 11:40:50 PM</td>
+										<td class='linked' test-id='81'>Job Search Test.Search for jobs.Search for jobs</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -473,31 +769,31 @@ No customer account found"</span>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>21</div>
+					<div class='panel-lead'>84</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 13, 2023 11:11:13 PM</div>
+					<div class='panel-lead'>Feb 13, 2023 11:34:31 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 13, 2023 11:12:02 PM</div>
+			 		<div class='panel-lead'>Feb 13, 2023 11:41:43 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>49,174ms</div>
+					<div class='panel-lead'>432,488ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -550,7 +846,7 @@ No customer account found"</span>
 						</tr>
 						<tr>
 							<td>@regression</td>
-							<td>4</td>
+							<td>8</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -578,7 +874,7 @@ No customer account found"</span>
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 4,
+				passChild: 7,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -587,7 +883,7 @@ No customer account found"</span>
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 21,
+				passGrandChild: 84,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
